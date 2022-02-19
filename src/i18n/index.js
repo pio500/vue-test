@@ -2,7 +2,7 @@ import Vue from 'vue'
 import config from '@/config'
 import VueI18n from 'vue-i18n'
 import helper from '../helper'
-const locales = ['zh-CN', 'en-US']
+const locales = ['ko-KO', 'en-US']
 
 Vue.use(VueI18n)
 
