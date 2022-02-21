@@ -39,10 +39,13 @@ v-app(:dark="dark",standalone)
     v-menu(offset-y)
       v-btn(icon, dark, slot="activator")
         v-icon(dark) language
-
     v-menu(offset-y)
-      v-btn(icon, dark, slot="activator", @click="kkk")
-        v-icon(dark) format_paint
+      v-btn(icon, dark, slot="activator", @click="openJenkins")
+        img(src="../../static/img/jenkins_logo.png" style="width:100%; height:100%;")
+    v-menu(offset-y)
+      v-btn(icon, dark, slot="activator", @click="openJenkins")
+        img(src="../../static/img/jenkins_logo.png" style="width:100%; height:100%;")
+
   main
     v-container.pa-4(fluid)
         v-alert(v-bind='message', v-model='message.body', dismissible) {{message.body}}
@@ -74,8 +77,8 @@ export default {
     //   global.helper.ls.set('locale', to)
     //   this.$i18n.locale = to
     // },
-    kkk () {
-      console.log('rrr')
+    openJenkins () {
+      window.open('http://www.naver.com', '_blank')
     },
     fetchMenu () {
       // fetch menu from server

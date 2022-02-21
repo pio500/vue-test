@@ -1,25 +1,21 @@
 export default [
   { 'header': 'Admin' },
-  { 'href': '/', 'title': 'HEEEome', 'icon': 'home' },
-  { 'href': '/crud/types', 'title': 'Types', 'icon': 'view_list' },
-  { 'href': '/crud/posts', 'title': 'Posts', 'icon': 'view_list' },
-  { 'href': '/crud/posts/create', 'title': 'Create Post', 'icon': 'note_add' },
-
-  { 'href': '/crud/comments', 'title': 'Comments', 'icon': 'view_list' },
-  { 'href': '/crud/users', 'title': 'Users', 'icon': 'people' },
-
-  { 'href': '/chat', 'title': 'Chat', 'icon': 'chat' },
+  { 'href': '/', 'title': 'Home', 'icon': 'home' },
+  { 'href': '/crud/types', 'title': 'Version Check', 'icon': 'check_box' },
+  { 'href': '/crud/posts', 'title': 'Build Result', 'icon': 'format_list_bulleted' },
   {
-    'title': 'Pages',
-    'icon': 'domain',
+    'title': 'Build',
+    'icon': 'developer_mode',
     'items': [
-      { 'href': '/example', 'title': 'Example' },
-      { 'href': '/about', 'title': 'About' }
+      { 'href': '/example', 'title': 'Windows', 'icon': 'desktop_windows' },
+      { 'href': '/about', 'title': 'IOS', 'icon': 'phone_iphone' },
+      { 'href': '/about', 'title': 'AOS', 'icon': 'android' },
+      { 'href': '/about', 'title': 'Server', 'icon': 'widgets' },
+      { 'href': '/about', 'title': 'ETC', 'icon': 'more' }
     ]
   },
   { divider: true },
   { 'header': 'System' },
   { 'href': '/settings', 'title': 'Settings', 'icon': 'settings' },
-
   { 'href': '/login', 'icon': 'lock', 'title': 'Logout' }
 ]
